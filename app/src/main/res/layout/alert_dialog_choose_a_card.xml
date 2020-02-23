@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alert_dialog_catch_notification_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_rounded_corners_grey">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/alert_dialog_blur_background">
+
+            <TextView
+                android:id="@+id/alert_dialog_choose_a_card_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Joueur 1"
+                android:textColor="#06c5df"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/alert_dialog_choose_a_card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alert_dialog_choose_a_card_player"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Choisis une carte"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/alert_dialog_choose_a_card_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alert_dialog_choose_a_card_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                app:srcCompat="@drawable/ic_choose_player_action_click" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/alert_dialog_choose_a_card_button"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/rounded_button_background_cyan"
+                android:text="Ok"
+                android:textColor="#EEE" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

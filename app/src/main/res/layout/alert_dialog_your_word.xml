@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_rounded_corners_grey">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/alert_dialog_blur_background">
+
+            <RelativeLayout
+                android:id="@+id/alert_dialog_your_word_image_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <com.suonk.drwhite.CircularImageView
+                    android:id="@+id/alert_dialog_your_word_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/ic_user" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/alert_dialog_your_word_image"
+                    app:srcCompat="@drawable/ic_dr_white_logo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alert_dialog_your_word_edit_text_layout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alert_dialog_your_word_image_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/alert_dialog_your_word_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Miradette"
+                    android:textColor="#00c3e0"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/alert_dialog_your_word_limit_char"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alert_dialog_your_word_edit_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="Ton mot est :"
+                    android:textColor="#6d6a67"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alert_dialog_your_word_secret_word_layout"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/alert_dialog_your_word_edit_text_layout"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/background_rounded_corners_transparent"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/alert_dialog_your_word_secret_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Miradette"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/alert_dialog_your_word_done"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/rounded_button_background_cyan"
+                android:text="Ok"
+                android:textColor="#EEE" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
